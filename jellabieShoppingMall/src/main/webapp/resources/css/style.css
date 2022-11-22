@@ -1,0 +1,317 @@
+* {
+  /*전체*/
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+
+.section input[id*="slide"] {
+  display: none;
+}
+.section .slidewrap {
+  max-width: 100%;
+  /* height: 550px; */
+  margin: 0 auto;
+}
+.section .slidelist {
+  white-space: nowrap;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+}
+.section .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+.section .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+.section .slidelist > li > a img {
+  width: 100%;
+}
+.section .slidelist label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  cursor: pointer;
+}
+.section .slidelist .textbox {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.6;
+  text-align: center;
+}
+.section .slidelist .textbox h3 {
+  font-family: "Gaegu", cursive;
+  font-size: 70px;
+  line-height: 90px;
+  color: #fff;
+  transform: translateY(30px);
+  transition: all 0.5s;
+}
+.section .slidelist .textbox p {
+  font-family: "Gaegu", cursive;
+  font-size: 22px;
+  color: #fff;
+  transform: translateY(30px);
+  transition: all 0.5s;
+  padding-top: 30px;
+}
+/* input에 체크되면 슬라이드 효과 */
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(0%);
+}
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-100%);
+}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-200%);
+}
+.section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-300%);
+}
+.section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-400%);
+}
+
+/* input에 체크되면 텍스트 효과 */
+.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+.section input[id="slide04"]:checked ~ .slidewrap li:nth-child(4) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.section input[id="slide04"]:checked ~ .slidewrap li:nth-child(4) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+.section input[id="slide05"]:checked ~ .slidewrap li:nth-child(5) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.section input[id="slide05"]:checked ~ .slidewrap li:nth-child(5) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+/* 좌,우 슬라이드 버튼 */
+.slide-control > div {
+  display: none; 
+}
+.section .left {
+  left: 30px;
+  background: url("../img/home/arrow_left.png") center center / 100% no-repeat;
+}
+.section .right {
+  right: 30px;
+  background: url("../img/home/arrow_right.png") center center / 100% no-repeat;
+}
+.section
+  input[id="slide01"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(1) {
+  display: block;
+}
+.section
+  input[id="slide02"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(2) {
+  display: block;
+}
+.section
+  input[id="slide03"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(3) {
+  display: block;
+}
+.section
+  input[id="slide04"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(4) {
+  display: block;
+}
+.section
+  input[id="slide05"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(5) {
+  display: block;
+}
+
+/* 페이징 */
+.slide-pagelist {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  background: #feffff;
+  z-index: 1;
+}
+.slide-pagelist > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.slide-pagelist > li > label {
+  display: block;
+  padding: 8px 8px;
+  border-radius: 20px;
+  background: #ccc;
+  margin: 5px;
+  cursor: pointer;
+}
+.section
+  input[id="slide01"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(1)
+  > label {
+  background: #999;
+}
+.section
+  input[id="slide02"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(2)
+  > label {
+  background: #999;
+}
+.section
+  input[id="slide03"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(3)
+  > label {
+  background: #999;
+}
+.section
+  input[id="slide04"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(4)
+  > label {
+  background: #999;
+}
+.section
+  input[id="slide05"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(5)
+  > label {
+  background: #999;
+}
+
+/* 로그인, 회원가입 */
+#loginContent, #regContent {
+	width: 100%;
+}
+.loginBox, .regBox {
+	margin:0 auto;
+	width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.regBox {
+	width: 450px;
+	height: 600px;	
+}
+#loginForm, #regForm {
+	width: 250px;
+}
+#signin_btn, #signup_btn {
+    width: 100%;
+    background-color: skyblue;
+    border-color: transparent;
+    color: white;
+    margin-top:10px;
+    height: 40px;
+}
+#userId, #userPass, #userName, #userPhon, #userAddr {
+	width: 100%;
+    display: block;
+    margin-bottom: 3px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+#regForm > .input_area {
+	padding-top:10px;
+}
+.loginText, .regText /* 로그인, 회원가입 글씨 */ {
+    text-align : center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.inputAddr {
+		
+}
+#inputAddr {
+	display: flex;
+	justify-content: space-between;	
+}
+#findAddr {
+	width: 90px;
+    background-color: skyblue;
+    border-color: transparent;
+    color: white;
+}
+#sample2_address, #sample2_detailAddress, #sample2_extraAddress {
+	width:100%;
+	margin-top:5px;	
+	border: 1px solid lightgray;
+    border-radius: 3px;
+}
+#sample2_postcode {
+	border: 1px solid lightgray;
+    border-radius: 3px;
+}

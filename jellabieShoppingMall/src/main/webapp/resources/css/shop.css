@@ -1,0 +1,179 @@
+* {
+  /*전체*/
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+.sns_icon {
+  /*sns아이콘위치지징*/
+  position: fixed;
+  display: inline-block;
+  right: 3%;
+  top: 60px;
+  width: 20px;
+  z-index: 1;
+}
+.sns > img {
+  /*sns아이콘 이미지*/
+  width: 100%;
+  object-fit: cover;
+}
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; }
+ul, lo, li { margin:0; padding:0; list-style:none; }
+
+/* ---------- */
+
+
+/* list */
+
+section#listContent { /* text-align:center; */ /* width:90%; */ /* height:800px; */ margin-left:50px; margin-right:10px;}
+section#listContent ul li { display:inline-block; margin:11px; }
+section#listContent div.goodsThumb img { width:200px; height:200px; }
+section#listContent div.goodsName { padding:10px 0; text-align:center; }
+section#listContent div.goodsName a { color:#000; }
+section#listContent ul li:hover {background:#cacaca;}
+
+div.goods div.goodsImg { float:left; width:350px; }
+div.goods div.goodsImg img { width:350px; height:auto; }
+
+div.goods div.goodsInfo { float:right; width:330px; font-size:22px; }
+div.goods div.goodsInfo p { margin:0 0 20px 0; }
+div.goods div.goodsInfo p span { display:inline-block; width:100px; margin-right:15px; } 
+
+div.goods div.goodsInfo p.cartStock input { font-size:22px; width:50px; padding:5px; margin:0; border:1px solid #eee; }
+div.goods div.goodsInfo p.cartStock button { font-size:26px; border:none; background:none; } 
+div.goods div.goodsInfo p.addToCart { text-align:right; }
+div.goods div.goodsInfo p.addToCart button { font-size:22px; padding:5px 10px; border:1px solid #eee; background:#eee;}
+div.goods div.gdsDes { font-size:18px; clear:both; padding-top:30px; }
+
+/* section.replyForm { padding:30px 0; } */
+section.replyForm div.input_area { margin:10px 0; }
+section.replyForm textarea { font-size:16px; font-family:'맑은 고딕', verdana; padding:10px; width:500px;; height:150px; }
+section.replyForm button { font-size:20px; padding:5px 10px; margin:10px 0; background:#fff; border:1px solid #ccc; }
+
+/* section.replyList { padding:30px 0; } */
+section.replyList ol { padding:0; margin:0; }
+section.replyList ol li { padding:10px 0; border-bottom:2px solid #eee; }
+section.replyList div.userInfo { }
+section.replyList div.userInfo .userName { font-size:24px; font-weight:bold; }
+section.replyList div.userInfo .date { color:#999; display:inline-block; margin-left:10px; }
+section.replyList div.replyContent { padding:10px; margin:20px 0; }
+section.replyList div.replyFooter { margin-bottom:10px; }
+
+section.replyList div.replyFooter button { font-size:14px; border: 1px solid #999; background:none; margin-right:10px; }
+
+div.replyModal { position:relative; z-index:1; display:none; }
+div.modalBackground { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.8); z-index:-1; }
+div.modalContent { position:fixed; top:20%; left:calc(50% - 250px); width:500px; height:250px; padding:20px 10px; background:#fff; border:2px solid #666; }
+div.modalContent textarea { font-size:16px; /* font-family:'맑은 고딕', verdana;  */padding:10px; width:500px; height:200px; }
+div.modalContent button { font-size:20px; padding:5px 10px; margin:10px 0; background:#fff; border:1px solid #ccc; }
+div.modalContent button.modal_cancel { margin-left:20px; }
+
+/* cartList */
+
+section#cartListContent ul li { display:inline-block; margin:10px; }
+section#cartListContent div.goodsThumb img { width:200px; height:200px; }
+section#cartListContent div.goodsName { padding:10px 0; text-align:center; }
+section#cartListContent div.goodsName a { color:#000; }
+
+#cartListLI { margin:10px 0; padding:10px 0; border-bottom:1px solid #999; }
+section#cartListContent ul li img { width:250px; height:250px; }
+section#cartListContent ul li::after { content:""; display:block; clear:both; }
+section#cartListContent div.thumb { float:left; width:250px; }
+section#cartListContent div.gdsInfo { float:right; width:calc(100% - 320px); }
+section#cartListContent div.gdsInfo { font-size:20px; line-height:2; }
+section#cartListContent div.gdsInfo span { display:inline-block; width:100px; font-weight:bold; margin-right:10px; }
+section#cartListContent div.gdsInfo .delete { text-align:right; }
+section#cartListContent div.gdsInfo .delete button { font-size:18px; padding:5px 10px; border:1px solid #eee; background:#eee;}
+
+.allCheck { float:left; width:200px; }
+.allCheck input { width:16px; height:16px; }
+.allCheck label { margin-left:10px; }
+.delBtn { float:right; width:300px; text-align:right; }
+.delBtn button { font-size:18px; padding:5px 10px; border:1px solid #eee; background:#eee;}
+
+.checkBox { float:left; width:30px; }
+.checkBox input { width:16px; height:16px; }
+
+.listResult { padding:20px; background:#eee; }
+.listResult .sum { float:left; width:45%; font-size:22px; }
+
+.listResult .orderOpne { float:right; width:45%; text-align:right; }
+.listResult .orderOpne button { font-size:18px; padding:5px 10px; border:1px solid #999; background:#fff;}
+.listResult::after { content:""; display:block; clear:both; } 
+
+.orderInfo { border:5px solid #eee; padding:20px; display:none; }
+.orderInfo .inputArea { margin:10px 0; }
+.orderInfo .inputArea label { display:inline-block; width:120px; margin-right:10px; }
+.orderInfo .inputArea input { font-size:14px; padding:5px; }
+#userAddr2, #userAddr3 { width:250px; }
+
+.orderInfo .inputArea:last-child { margin-top:30px; }
+.orderInfo .inputArea button { font-size:20px; border:2px solid #ccc; padding:5px 10px; background:#fff; margin-right:20px;}
+
+.orderInfo .inputArea #sample2_address { width:230px; }
+.orderInfo .inputArea #sample2_detailAddress { width:280px; }
+.orderInfo .inputArea #sample2_extraAddress { display:none; }
+
+/* orderList */
+
+section#orderListContent ul li { display:inline-block; margin:10px; }
+section#orderListContent div.goodsThumb img { width:200px; height:200px; }
+section#orderListContent div.goodsName { padding:10px 0; text-align:center; }
+section#orderListContent div.goodsName a { color:#000; }
+
+section#orderListContent ul li { border:5px solid #eee; padding:10px 20px; margin-bottom:20px; }
+section#orderListContent .orderList span { font-size:20px; font-weight:bold; display:inline-block; width:90px; margin-right:10px; }
+
+/* view */
+
+#reply {padding:30px;}
+/* section.replyForm { padding:30px 0; } */
+section.replyForm div.input_area { margin:10px 0; }
+section.replyForm textarea { font-size:16px; font-family:'맑은 고딕', verdana; padding:10px; width:500px;; height:150px; }
+section.replyForm button { font-size:20px; padding:5px 10px; margin:10px 0; background:#fff; border:1px solid #ccc; }
+
+/* section.replyList { padding:30px; } */
+section.replyList ol { padding:0; margin:0; }
+section.replyList ol li { padding:10px 0; border-bottom:2px solid #eee; }
+section.replyList div.userInfo { }
+section.replyList div.userInfo .userName { font-size:24px; font-weight:bold; }
+section.replyList div.userInfo .date { color:#999; display:inline-block; margin-left:10px; }
+section.replyList div.replyContent { padding:10px; margin:20px 0; }
+section.replyList div.replyFooter { margin-bottom:10px; }	
+section.replyList div.replyFooter button { font-size:14px; border: 1px solid #999; background:none; margin-right:10px; }
+
+div.replyModal { position:relative; z-index:1; display:none; }
+div.modalBackground { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.8); z-index:-1; }
+div.modalContent { position:fixed; top:20%; left:calc(50% - 250px); width:500px; height:250px; padding:20px 10px; background:#fff; border:2px solid #666; }
+div.modalContent textarea { font-size:16px; font-family:'맑은 고딕', verdana; padding:10px; width:500px; height:200px; }
+div.modalContent button { font-size:20px; padding:5px 10px; margin:10px 0; background:#fff; border:1px solid #ccc; }
+div.modalContent button.modal_cancel { margin-left:20px; }
+
+/* orderView */
+
+section#content ul li { display:inline-block; margin:10px; }
+section#content div.goodsThumb img { width:200px; height:200px; }
+section#content div.goodsName { padding:10px 0; text-align:center; }
+section#content div.goodsName a { color:#000; }
+
+.orderInfo { border:5px solid #eee; padding:10px 20px; margin:20px 0;} 
+.orderInfo span { font-size:20px; font-weight:bold; display:inline-block; width:90px; }
+
+.orderView li { margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #999; }
+.orderView li::after { content:""; display:block; clear:both; }
+
+.thumb { float:left; width:200px; }
+.thumb img { width:200px; height:200px; }
+.gdsInfo { float:right; width:calc(100% - 220px); line-height:2; }
+.gdsInfo span { font-size:20px; font-weight:bold; display:inline-block; width:100px; margin-right:10px; }
+
+
+

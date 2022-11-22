@@ -1,0 +1,155 @@
+* {
+  /*전체*/
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+.sns_icon {
+  /*sns아이콘위치지징*/
+  position: fixed;
+  display: inline-block;
+  right: 3%;
+  top: 60px;
+  width: 20px;
+  z-index: 1;
+}
+.sns > img {
+  /*sns아이콘 이미지*/
+  width: 100%;
+  object-fit: cover;
+}
+.toparea {
+  width: 100%;
+  height: 180px;
+  background: #feffff;
+}
+.tm {
+	position: absolute;
+	width: 100%;
+}
+.tm > * {
+  /*각로그인회원가입지정*/
+ 	font-family: "Nanum Gothic", sans-serif;
+ 	color: gray;
+ 	font-size: 15px; 
+}
+.tm_text {
+ 	padding-top:5px;
+ 	padding-right:10px;
+ 	text-align: right;
+}
+.logo_pack {
+  width: 100%;	
+}
+.logo_img { 
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+}
+.logo_text {
+  /*젤라비동물병원*/
+  margin: auto;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  line-height: 0px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.logo_text > * {
+  /*글꼴적용*/
+}
+.grandlink {
+  color: #000000;
+}
+.header {
+  /*헤더 전체영역*/
+  width: 100%;
+  height: 60px;
+  background: #feffff;
+}
+.nav {
+  /* 메뉴 전체영역 */
+  /* width: 1500px; */
+  height: 60px;
+  font-size: 15px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.nav > li > ul {
+  /*하위 메뉴*/
+  display: none;
+  position: relative;
+  z-index: 1;
+  background: #fcffff; /* white */
+  line-height: 40px;
+  text-align: center;
+}
+.nav > li:hover > ul {
+  display: block;
+}
+.nav > li > ul > li:hover {
+  background: #000000; /* black */
+}
+.nav > li > ul > li:hover > a {
+  color: #fff;
+}
+.menufont {
+  /*각 상단메뉴 지정*/
+  font-size: 18px;
+  width: 400px;
+  min-width: 150px;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+  font-weight: bold;
+  /* display: flex; */
+}
+.menufont > a {
+  display: block;
+}
+.subtext {
+  font-size: 14px;
+}
+.subtext > li > a {
+  display: block;
+}
+
+
+.footer {
+  width: 100%;
+  background-color: #feffff;
+  height: 250px;
+  position: relative;
+  display: inline-block;
+}
+.logo_img_bottom {
+  width: 200px;
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+}
+.logo_img_bottom > img {
+  width: 100%;
+}
+.footer_text_main > a > * {
+  text-align: center;
+  font-size: 25px;
+  line-height: 20px;
+}
+.footer_text_sub {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 25px;
+  color: #000;
+  line-height: 25px;
+}

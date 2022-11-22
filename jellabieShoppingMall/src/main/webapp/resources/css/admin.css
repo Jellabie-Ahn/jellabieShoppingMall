@@ -1,0 +1,63 @@
+* {/*전체*/font-family: "Noto Sans KR", sans-serif; list-style: none; text-decoration: none; border-collapse: collapse; margin: 0px; padding: 0px; color: #000;}
+.sns_icon {/*sns아이콘위치지징*/position: fixed;display: inline-block;right: 3%;top: 60px;width: 20px;z-index: 1;}
+.sns > img {/*sns아이콘 이미지*/width: 100%;object-fit: cover;}
+#container {width:100%;/* height:800px;background:skyblue; */	}
+#container_box { margin: 0 auto; padding: 10px; padding-top: 20px; width:90%; /* height:90%; */ text-align:center; }
+.container_reg {text-align:unset !important;}
+#goodsRegForm { margin-top:10px;  } 
+#product { /* display: block; */ width: 90%; text-align: center; text-decoration:none; color: black; /* float:left; */ margin-left: 10px; margin-right: 10px; margin-bottom: 30px;}
+#product th {font-size:20px; font-weight:bold; text-align:center; padding:10px; border-bottom:2px solid #666;}
+#product_tbody tr:hover {background:#eee;}
+#product td {padding:10px; text-align:center;}
+#product img {width:150px; height:auto;}							
+.inputArea { margin-top:5px; margin-bottom:5px;}
+.select_img img { margin:20px 0; }
+.oriImg { width:500px; height:auto; }
+.thumbImg {}
+input { width:200px; }
+label { display:inline-block; width:70px; padding:5px; }
+label[for='gdsDes'] { display:block; }
+textarea#gdsDes { width:400px; height:180px; }
+
+
+#container_box table { width:900px; } 
+#container_box table th { font-size:20px; font-weight:bold;
+							text-align:center; padding:10px; border-bottom:2px solid #666; }
+#container_box table tr:hover { background:#eee; }
+#container_box table td { padding:10px; text-align:center; }
+#container_box table img { width:150px; height:auto; }
+
+/*  */
+#container_box ul li { margin-bottom:20px; border:10px solid #eee; }
+.replyInfo { background:#eee; padding:10px; font-size:18px; text-align: left;}
+.replyInfo span { font-size:20px; font-weight:bold; margin-right:20px; }
+.replyContent { padding:10px; }
+
+.replyControll {text-align:right; padding:10px; }
+.replyControll button { border:2px solid #999; background:#fff; }
+
+/* orderList */
+
+.orderList li div {text-align:left; padding:10px 10px 10px 50px;}
+
+/* orderView */
+
+#orderViewList {padding:20px;}
+
+.orderInfo { border:5px solid #eee; padding:10px 20px; margin:20px 0; text-align:left;} 
+.orderInfo span { font-size:20px; font-weight:bold; display:inline-block; width:90px; }
+
+.orderView li { margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #999; }
+.orderView li::after { content:""; display:block; clear:both; }
+
+.thumb { float:left; width:200px; }
+.thumb img { width:200px; height:200px; }
+.gdsInfo { text-align:left; width:calc(100% - 220px); line-height:2; }
+.gdsInfo span { font-size:20px; font-weight:bold; display:inline-block; width:100px; margin-right:10px; margin-left: 50px;}
+
+.deliveryChange { text-align:right; }
+.delivery1_btn,
+.delivery2_btn,
+.delivery3_btn  { font-size:16px; background:#fff; border:1px solid #999; margin-left:10px; }
+
+
